@@ -1,0 +1,14 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "elections2016:Political_parties" "elections2016:Republic" "elections2016:Periode" "elections2016:VotingAge" "elections2016:Region" "elections2016:ClasseSociale" "elections2016:Nominee_democratic" "elections2016:Nominee_republic" "elections2016:Votes" "elections2016:Democratic" ; /*classes style*/
+	"elections2016:VotingAge" -> "elections2016:Votes" [ label = "rdfs:subClassOf" ];
+	"elections2016:Periode" -> "elections2016:Votes" [ label = "rdfs:subClassOf" ];
+	"elections2016:Nominee_democratic" -> "elections2016:Democratic" [ label = "rdfs:subClassOf" ];
+	"elections2016:Democratic" -> "elections2016:Political_parties" [ label = "rdfs:subClassOf" ];
+	"elections2016:Republic" -> "elections2016:Political_parties" [ label = "rdfs:subClassOf" ];
+	"elections2016:ClasseSociale" -> "elections2016:Votes" [ label = "rdfs:subClassOf" ];
+	"elections2016:Nominee_republic" -> "elections2016:Republic" [ label = "rdfs:subClassOf" ];
+	"elections2016:Region" -> "elections2016:Votes" [ label = "rdfs:subClassOf" ];
+
+}

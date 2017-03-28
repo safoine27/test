@@ -1,0 +1,19 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "elections2016:Political_parties" "elections2016:Republic" "elections2016:Periode" "elections2016:VotingAge" "elections2016:Region" "elections2016:ClasseSociale" "elections2016:Nominee_democratic" "elections2016:Nominee_republic" "elections2016:Votes" "elections2016:Democratic" ; /*classes style*/
+	"elections2016:HasVoteByPeriode" -> "elections2016:HasVote" [ label = "rdfs:subPropertyOf" ];
+	"elections2016:HasVoteByRegion" -> "elections2016:HasVote" [ label = "rdfs:subPropertyOf" ];
+	"elections2016:HasVoteByClasseSociale" -> "elections2016:HasVote" [ label = "rdfs:subPropertyOf" ];
+	"elections2016:HasVoteByVotingAge" -> "elections2016:HasVote" [ label = "rdfs:subPropertyOf" ];
+	"elections2016:Republic" -> "elections2016:Nominee_republic" [ label = "elections2016:hasNomineeDemocratic" ];
+	"elections2016:Republic" -> "elections2016:Nominee_republic" [ label = "elections2016:haspartytwo" ];
+	"elections2016:Nominee_democratic" -> "elections2016:Periode" [ label = "elections2016:HasVoteByPeriode" ];
+	"elections2016:Nominee_democratic" -> "elections2016:VotingAge" [ label = "elections2016:HasVoteByVotingAge" ];
+	"elections2016:Nominee_democratic" -> "elections2016:Votes" [ label = "elections2016:HasVote" ];
+	"elections2016:Nominee_democratic" -> "elections2016:Region" [ label = "elections2016:HasVoteByRegion" ];
+	"elections2016:Nominee_democratic" -> "elections2016:ClasseSociale" [ label = "elections2016:HasVoteByClasseSociale" ];
+	"elections2016:Political_parties" -> "elections2016:Democratic" [ label = "elections2016:hasPartone" ];
+	"elections2016:Democratic" -> "elections2016:Nominee_democratic" [ label = "elections2016:hasNomineeRepublic" ];
+
+}

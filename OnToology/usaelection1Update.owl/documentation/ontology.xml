@@ -1,0 +1,224 @@
+<rdf:RDF
+    xmlns:elections2016="http://www.kdm.com/OWL/elections2016#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#Democratic">
+    <rdfs:subClassOf rdf:resource="http://www.kdm.com/OWL/elections2016#Political_parties"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#haspartytwo">
+    <rdfs:range rdf:resource="http://www.kdm.com/OWL/elections2016#Nominee_republic"/>
+    <rdfs:domain rdf:resource="http://www.kdm.com/OWL/elections2016#Republic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#Over_50">
+    <rdf:type rdf:resource="http://www.kdm.com/OWL/elections2016#VotingAge"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#Region">
+    <rdfs:subClassOf rdf:resource="http://www.kdm.com/OWL/elections2016#Votes"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#occupation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#hasNomineeRepublic">
+    <rdfs:range rdf:resource="http://www.kdm.com/OWL/elections2016#Nominee_democratic"/>
+    <rdfs:domain rdf:resource="http://www.kdm.com/OWL/elections2016#Democratic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#September">
+    <rdf:type rdf:resource="http://www.kdm.com/OWL/elections2016#Periode"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#April">
+    <rdf:type rdf:resource="http://www.kdm.com/OWL/elections2016#Periode"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#Texas">
+    <rdf:type rdf:resource="http://www.kdm.com/OWL/elections2016#Region"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#Between_18_and_49">
+    <rdf:type rdf:resource="http://www.kdm.com/OWL/elections2016#VotingAge"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#Professeur">
+    <rdf:type rdf:resource="http://www.kdm.com/OWL/elections2016#ClasseSociale"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#July">
+    <rdf:type rdf:resource="http://www.kdm.com/OWL/elections2016#Periode"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#Nominee_republic">
+    <rdfs:subClassOf rdf:resource="http://www.kdm.com/OWL/elections2016#Republic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#Republic">
+    <rdfs:subClassOf rdf:resource="http://www.kdm.com/OWL/elections2016#Political_parties"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#HasVoteByRegion">
+    <rdfs:range rdf:resource="http://www.kdm.com/OWL/elections2016#Region"/>
+    <rdfs:domain rdf:resource="http://www.kdm.com/OWL/elections2016#Nominee_republic"/>
+    <rdfs:domain rdf:resource="http://www.kdm.com/OWL/elections2016#Nominee_democratic"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.kdm.com/OWL/elections2016#HasVote"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#RepublicNominee">
+    <elections2016:name>Donald Trump</elections2016:name>
+    <rdf:type rdf:resource="http://www.kdm.com/OWL/elections2016#Republic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#DemocraticNominee">
+    <elections2016:name>HillaryClinton</elections2016:name>
+    <rdf:type rdf:resource="http://www.kdm.com/OWL/elections2016#Democratic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#November">
+    <rdf:type rdf:resource="http://www.kdm.com/OWL/elections2016#Periode"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#Nominee_democratic">
+    <rdfs:subClassOf rdf:resource="http://www.kdm.com/OWL/elections2016#Democratic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#HasVoteByVotingAge">
+    <rdfs:range rdf:resource="http://www.kdm.com/OWL/elections2016#VotingAge"/>
+    <rdfs:domain rdf:resource="http://www.kdm.com/OWL/elections2016#Nominee_republic"/>
+    <rdfs:domain rdf:resource="http://www.kdm.com/OWL/elections2016#Nominee_democratic"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.kdm.com/OWL/elections2016#HasVote"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#hasNomineeDemocratic">
+    <rdfs:range rdf:resource="http://www.kdm.com/OWL/elections2016#Nominee_republic"/>
+    <rdfs:domain rdf:resource="http://www.kdm.com/OWL/elections2016#Republic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#HasVoteByPeriode">
+    <rdfs:range rdf:resource="http://www.kdm.com/OWL/elections2016#Periode"/>
+    <rdfs:domain rdf:resource="http://www.kdm.com/OWL/elections2016#Nominee_republic"/>
+    <rdfs:domain rdf:resource="http://www.kdm.com/OWL/elections2016#Nominee_democratic"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.kdm.com/OWL/elections2016#HasVote"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#HasVote">
+    <rdfs:range rdf:resource="http://www.kdm.com/OWL/elections2016#Votes"/>
+    <rdfs:domain rdf:resource="http://www.kdm.com/OWL/elections2016#Nominee_republic"/>
+    <rdfs:domain rdf:resource="http://www.kdm.com/OWL/elections2016#Nominee_democratic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#age">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#name">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#Periode">
+    <rdfs:subClassOf rdf:resource="http://www.kdm.com/OWL/elections2016#Votes"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#HillaryClinton">
+    <elections2016:currentLocation>chicago</elections2016:currentLocation>
+    <rdf:type rdf:resource="http://www.kdm.com/OWL/elections2016#Nominee_democratic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#VotingAge">
+    <rdfs:subClassOf rdf:resource="http://www.kdm.com/OWL/elections2016#Votes"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#March">
+    <rdf:type rdf:resource="http://www.kdm.com/OWL/elections2016#Periode"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#spouse">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#January">
+    <rdf:type rdf:resource="http://www.kdm.com/OWL/elections2016#Periode"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#Ingenieur">
+    <rdf:type rdf:resource="http://www.kdm.com/OWL/elections2016#ClasseSociale"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#DonaldTrump">
+    <elections2016:occupation>MelaniaKnauss</elections2016:occupation>
+    <elections2016:occupation>Businessman</elections2016:occupation>
+    <elections2016:currentLocation>NewYork</elections2016:currentLocation>
+    <elections2016:asset>4,500,000,000</elections2016:asset>
+    <elections2016:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</elections2016:age>
+    <rdf:type rdf:resource="http://www.kdm.com/OWL/elections2016#Nominee_republic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#Etudiant">
+    <rdf:type rdf:resource="http://www.kdm.com/OWL/elections2016#ClasseSociale"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#Votes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#June">
+    <rdf:type rdf:resource="http://www.kdm.com/OWL/elections2016#Periode"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#currentLocation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#Political_parties">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#HasVoteByClasseSociale">
+    <rdfs:range rdf:resource="http://www.kdm.com/OWL/elections2016#ClasseSociale"/>
+    <rdfs:domain rdf:resource="http://www.kdm.com/OWL/elections2016#Nominee_republic"/>
+    <rdfs:domain rdf:resource="http://www.kdm.com/OWL/elections2016#Nominee_democratic"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.kdm.com/OWL/elections2016#HasVote"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#October">
+    <rdf:type rdf:resource="http://www.kdm.com/OWL/elections2016#Periode"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#Alabama">
+    <rdf:type rdf:resource="http://www.kdm.com/OWL/elections2016#Region"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#New_York">
+    <rdf:type rdf:resource="http://www.kdm.com/OWL/elections2016#Region"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#hasPartone">
+    <rdfs:range rdf:resource="http://www.kdm.com/OWL/elections2016#Democratic"/>
+    <rdfs:domain rdf:resource="http://www.kdm.com/OWL/elections2016#Political_parties"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#asset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#ClasseSociale">
+    <rdfs:subClassOf rdf:resource="http://www.kdm.com/OWL/elections2016#Votes"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#May">
+    <rdf:type rdf:resource="http://www.kdm.com/OWL/elections2016#Periode"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#December">
+    <rdf:type rdf:resource="http://www.kdm.com/OWL/elections2016#Periode"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#February">
+    <rdf:type rdf:resource="http://www.kdm.com/OWL/elections2016#Periode"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.kdm.com/OWL/elections2016#August">
+    <rdf:type rdf:resource="http://www.kdm.com/OWL/elections2016#Periode"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+</rdf:RDF>
