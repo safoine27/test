@@ -1,0 +1,88 @@
+{
+  "@context" : {
+    "Nominee_republic" : {
+      "@id" : "http://www.kdm.com/OWL/elections2016#Nominee_republic"
+    },
+    "Republic" : {
+      "@id" : "http://www.kdm.com/OWL/elections2016#Republic"
+    },
+    "HasVote" : {
+      "@id" : "http://www.kdm.com/OWL/elections2016#HasVote",
+      "@type" : "@id"
+    },
+    "HasVoteByRegion" : {
+      "@id" : "http://www.kdm.com/OWL/elections2016#HasVoteByRegion",
+      "@type" : "@id"
+    },
+    "age" : {
+      "@id" : "http://www.kdm.com/OWL/elections2016#age"
+    },
+    "hasNomineeDemocratic" : {
+      "@id" : "http://www.kdm.com/OWL/elections2016#hasNomineeDemocratic",
+      "@type" : "@id"
+    },
+    "asset" : {
+      "@id" : "http://www.kdm.com/OWL/elections2016#asset"
+    },
+    "currentLocation" : {
+      "@id" : "http://www.kdm.com/OWL/elections2016#currentLocation"
+    },
+    "name" : {
+      "@id" : "http://www.kdm.com/OWL/elections2016#name"
+    },
+    "VotingAge" : {
+      "@id" : "http://www.kdm.com/OWL/elections2016#VotingAge"
+    },
+    "HasVoteByPeriode" : {
+      "@id" : "http://www.kdm.com/OWL/elections2016#HasVoteByPeriode",
+      "@type" : "@id"
+    },
+    "HasVoteByVotingAge" : {
+      "@id" : "http://www.kdm.com/OWL/elections2016#HasVoteByVotingAge",
+      "@type" : "@id"
+    },
+    "haspartytwo" : {
+      "@id" : "http://www.kdm.com/OWL/elections2016#haspartytwo",
+      "@type" : "@id"
+    },
+    "spouse" : {
+      "@id" : "http://www.kdm.com/OWL/elections2016#spouse"
+    },
+    "hasNomineeRepublic" : {
+      "@id" : "http://www.kdm.com/OWL/elections2016#hasNomineeRepublic",
+      "@type" : "@id"
+    },
+    "Democratic" : {
+      "@id" : "http://www.kdm.com/OWL/elections2016#Democratic"
+    },
+    "occupation" : {
+      "@id" : "http://www.kdm.com/OWL/elections2016#occupation"
+    },
+    "Periode" : {
+      "@id" : "http://www.kdm.com/OWL/elections2016#Periode"
+    },
+    "HasVoteByClasseSociale" : {
+      "@id" : "http://www.kdm.com/OWL/elections2016#HasVoteByClasseSociale",
+      "@type" : "@id"
+    },
+    "Nominee_democratic" : {
+      "@id" : "http://www.kdm.com/OWL/elections2016#Nominee_democratic"
+    },
+    "Political_parties" : {
+      "@id" : "http://www.kdm.com/OWL/elections2016#Political_parties"
+    },
+    "hasPartone" : {
+      "@id" : "http://www.kdm.com/OWL/elections2016#hasPartone",
+      "@type" : "@id"
+    },
+    "ClasseSociale" : {
+      "@id" : "http://www.kdm.com/OWL/elections2016#ClasseSociale"
+    },
+    "Region" : {
+      "@id" : "http://www.kdm.com/OWL/elections2016#Region"
+    },
+    "Votes" : {
+      "@id" : "http://www.kdm.com/OWL/elections2016#Votes"
+    }
+  }
+}

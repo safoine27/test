@@ -1,0 +1,196 @@
+@prefix :        <http://www.kdm.com/OWL/elections2016#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix elections2016:  <http://www.kdm.com/OWL/elections2016#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+elections2016:Democratic
+      a       owl:Class ;
+      rdfs:subClassOf elections2016:Political_parties .
+
+elections2016:haspartytwo
+      a       owl:ObjectProperty ;
+      rdfs:domain elections2016:Republic ;
+      rdfs:range elections2016:Nominee_republic .
+
+elections2016:Over_50
+      a       owl:NamedIndividual , elections2016:VotingAge .
+
+elections2016:Region
+      a       owl:Class ;
+      rdfs:subClassOf elections2016:Votes .
+
+elections2016:occupation
+      a       owl:DatatypeProperty .
+
+elections2016:hasNomineeRepublic
+      a       owl:ObjectProperty ;
+      rdfs:domain elections2016:Democratic ;
+      rdfs:range elections2016:Nominee_democratic .
+
+elections2016:September
+      a       owl:NamedIndividual , elections2016:Periode .
+
+elections2016:April
+      a       owl:NamedIndividual , elections2016:Periode .
+
+elections2016:Texas
+      a       owl:NamedIndividual , elections2016:Region .
+
+elections2016:Between_18_and_49
+      a       owl:NamedIndividual , elections2016:VotingAge .
+
+elections2016:Professeur
+      a       elections2016:ClasseSociale , owl:NamedIndividual .
+
+elections2016:July
+      a       owl:NamedIndividual , elections2016:Periode .
+
+elections2016:Nominee_republic
+      a       owl:Class ;
+      rdfs:subClassOf elections2016:Republic .
+
+elections2016:Republic
+      a       owl:Class ;
+      rdfs:subClassOf elections2016:Political_parties .
+
+elections2016:HasVoteByRegion
+      a       owl:ObjectProperty ;
+      rdfs:domain elections2016:Nominee_democratic , elections2016:Nominee_republic ;
+      rdfs:range elections2016:Region ;
+      rdfs:subPropertyOf elections2016:HasVote .
+
+elections2016:RepublicNominee
+      a       owl:NamedIndividual , elections2016:Republic ;
+      elections2016:name "Donald Trump" .
+
+elections2016:DemocraticNominee
+      a       elections2016:Democratic , owl:NamedIndividual ;
+      elections2016:name "HillaryClinton" .
+
+elections2016:November
+      a       owl:NamedIndividual , elections2016:Periode .
+
+elections2016:Nominee_democratic
+      a       owl:Class ;
+      rdfs:subClassOf elections2016:Democratic .
+
+elections2016:HasVoteByVotingAge
+      a       owl:ObjectProperty ;
+      rdfs:domain elections2016:Nominee_democratic , elections2016:Nominee_republic ;
+      rdfs:range elections2016:VotingAge ;
+      rdfs:subPropertyOf elections2016:HasVote .
+
+elections2016:hasNomineeDemocratic
+      a       owl:ObjectProperty ;
+      rdfs:domain elections2016:Republic ;
+      rdfs:range elections2016:Nominee_republic .
+
+elections2016:HasVoteByPeriode
+      a       owl:ObjectProperty ;
+      rdfs:domain elections2016:Nominee_democratic , elections2016:Nominee_republic ;
+      rdfs:range elections2016:Periode ;
+      rdfs:subPropertyOf elections2016:HasVote .
+
+elections2016:HasVote
+      a       owl:ObjectProperty ;
+      rdfs:domain elections2016:Nominee_democratic , elections2016:Nominee_republic ;
+      rdfs:range elections2016:Votes .
+
+elections2016:age
+      a       owl:DatatypeProperty .
+
+elections2016:name
+      a       owl:DatatypeProperty .
+
+elections2016:Periode
+      a       owl:Class ;
+      rdfs:subClassOf elections2016:Votes .
+
+elections2016:HillaryClinton
+      a       elections2016:Nominee_democratic , owl:NamedIndividual ;
+      elections2016:currentLocation
+              "chicago" .
+
+elections2016:VotingAge
+      a       owl:Class ;
+      rdfs:subClassOf elections2016:Votes .
+
+elections2016:March
+      a       owl:NamedIndividual , elections2016:Periode .
+
+elections2016:spouse
+      a       owl:DatatypeProperty .
+
+elections2016:January
+      a       owl:NamedIndividual , elections2016:Periode .
+
+elections2016:Ingenieur
+      a       elections2016:ClasseSociale , owl:NamedIndividual .
+
+elections2016:DonaldTrump
+      a       owl:NamedIndividual , elections2016:Nominee_republic ;
+      elections2016:age 70 ;
+      elections2016:asset "4,500,000,000" ;
+      elections2016:currentLocation
+              "NewYork" ;
+      elections2016:occupation
+              "Businessman" , "MelaniaKnauss" .
+
+elections2016:Etudiant
+      a       elections2016:ClasseSociale , owl:NamedIndividual .
+
+elections2016:Votes
+      a       owl:Class .
+
+elections2016:June
+      a       owl:NamedIndividual , elections2016:Periode .
+
+elections2016:currentLocation
+      a       owl:DatatypeProperty .
+
+elections2016:Political_parties
+      a       owl:Class .
+
+elections2016:HasVoteByClasseSociale
+      a       owl:ObjectProperty ;
+      rdfs:domain elections2016:Nominee_democratic , elections2016:Nominee_republic ;
+      rdfs:range elections2016:ClasseSociale ;
+      rdfs:subPropertyOf elections2016:HasVote .
+
+elections2016:October
+      a       owl:NamedIndividual , elections2016:Periode .
+
+elections2016:Alabama
+      a       owl:NamedIndividual , elections2016:Region .
+
+elections2016:
+      a       owl:Ontology .
+
+elections2016:New_York
+      a       owl:NamedIndividual , elections2016:Region .
+
+elections2016:hasPartone
+      a       owl:ObjectProperty ;
+      rdfs:domain elections2016:Political_parties ;
+      rdfs:range elections2016:Democratic .
+
+elections2016:asset
+      a       owl:DatatypeProperty .
+
+elections2016:ClasseSociale
+      a       owl:Class ;
+      rdfs:subClassOf elections2016:Votes .
+
+elections2016:May
+      a       owl:NamedIndividual , elections2016:Periode .
+
+elections2016:December
+      a       owl:NamedIndividual , elections2016:Periode .
+
+elections2016:February
+      a       owl:NamedIndividual , elections2016:Periode .
+
+elections2016:August
+      a       owl:NamedIndividual , elections2016:Periode .
